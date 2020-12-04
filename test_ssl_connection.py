@@ -23,7 +23,7 @@ if __name__ == '__main__':
     app.add_routes([web.get("/health_check/", health_check)])
     web.run_app(
         app,
-        host="127.0.0.1",
-        port=8080,
+        host="0.0.0.0",
+        port=443,
         ssl_context=context
     )
